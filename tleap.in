@@ -1,0 +1,19 @@
+source leaprc.protein.ff14SB  
+source leaprc.water.tip3p     
+source leaprc.gaff2             
+loadAmberParams ./lig/lig.frcmod 
+loadAmberPrep ./lig/lig.prep 
+r=loadpdb rec.pdb
+p=loadpdb complex.pdb
+l=loadpdb lig_new.pdb
+saveamberparm p p.top p.crd
+saveamberparm r r.top r.crd
+saveamberparm l l.top l.crd
+charge p 
+addIons p Na+ 0
+addIons p Cl- 0 
+solvateOct p TIP3PBOX 10.0
+saveamberparm p p_wat.top p_wat.crd
+quit
+ambpdb -p p_wat.top -c p_wat.crd > p_wat.pdb
+

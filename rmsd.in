@@ -1,0 +1,7 @@
+trajin p_wat.md1.crd
+trajin p_wat.md2.crd
+autoimage
+strip :WAT:Na+:Cl-
+
+rms first @CA out ./rmsd_total.dat
+

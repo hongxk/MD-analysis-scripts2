@@ -1,0 +1,6 @@
+Initial minimization of apo
+ &cntrl
+  imin=1, maxcyc=10000, ncyc=500,
+  cut=8, ntb=2, ntp=1, igb=0,
+
+ /

@@ -1,0 +1,7 @@
+trajin p_wat.md4.crd
+autoimage
+strip :WAT:Na+:Cl-
+
+rms first @CA
+atomicfluct out ./rmsf_total.dat @CA byres 
+

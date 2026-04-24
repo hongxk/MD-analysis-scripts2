@@ -1,0 +1,8 @@
+Production MD
+ &cntrl
+  imin=0, irest=1, ntx=5, IG=20141217, iwrap=1,
+  nstlim=25000000,dt=0.002, ntc=2,ntf=2,
+  ntpr=2500, ntwx=2500,
+  cut=8, ntb=2, igb=0,ntp=1, 
+  ntt=1, tempi=298.15, temp0=298.15,tautp=2.0,
+ /
